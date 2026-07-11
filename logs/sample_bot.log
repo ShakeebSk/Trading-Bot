@@ -1,0 +1,10 @@
+2026-07-07 15:20:53 | INFO     | trading_bot | === SAMPLE RUN — simulated responses (no live network in this sandbox) ===
+2026-07-07 15:20:53 | INFO     | trading_bot | Order request: symbol=BTCUSDT side=BUY type=MARKET quantity=0.01
+2026-07-07 15:20:53 | DEBUG    | trading_bot | REQUEST POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1783437653215, 'recvWindow': 5000, 'signature': 'e24316...redacted'}
+2026-07-07 15:20:53 | DEBUG    | trading_bot | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order status=200 body={'orderId': 3450001234, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'sample-market-1', 'price': '0', 'avgPrice': '67540.20', 'origQty': '0.010', 'executedQty': '0.010', 'cumQuote': '675.40', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'BUY'}
+2026-07-07 15:20:53 | INFO     | trading_bot | Order SUCCESS: orderId=3450001234 status=FILLED executedQty=0.010 avgPrice=67540.20
+2026-07-07 15:20:53 | INFO     | trading_bot | Order request: symbol=ETHUSDT side=SELL type=LIMIT quantity=1 price=3500.50
+2026-07-07 15:20:53 | DEBUG    | trading_bot | REQUEST POST https://testnet.binancefuture.com/fapi/v1/order params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '1', 'price': '3500.50', 'timeInForce': 'GTC', 'timestamp': 1783437653217, 'recvWindow': 5000, 'signature': 'eed4a6...redacted'}
+2026-07-07 15:20:53 | DEBUG    | trading_bot | RESPONSE POST https://testnet.binancefuture.com/fapi/v1/order status=200 body={'orderId': 3450005678, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'sample-limit-1', 'price': '3500.50', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQuote': '0.00', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL'}
+2026-07-07 15:20:53 | INFO     | trading_bot | Order SUCCESS: orderId=3450005678 status=NEW executedQty=0.000 avgPrice=0.00
+2026-07-07 15:20:53 | INFO     | trading_bot | === END SAMPLE RUN ===
